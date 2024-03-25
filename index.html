@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguedong kuidja Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logoo-removebg-preview.png"class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>               
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Informatik Studentin</p>
+            <h1>Hallo,ich bin<br><span> Nguedong Kuidja</span></h1>
+        </div>
+    </div>
+
+  </div> 
+  <!------------------About----------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="images/backgroundimage.jpg" class="bild">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">Über mich</h1>
+            <p>Mein Name ist Nguedong Kuidja,Informatikstudentin an der Technischen
+                Hochschule Mittelhessen. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>ADVANCED</li>
+                        <li><span>css</span><br>ADVANCED</li>
+                        <li><span>C</span><br>MIDDLE</li>
+                        <li><span>java</span><br>MIDDLE</li>
+                        <li><span>JavaScript</span><br>MIDDLE</li>
+                        <li><span>canva</span><br>BEGINNER</li>
+                        <li><span>Deutsch</span><br>MIDDLE</li>
+                        <li><span>English</span><br>ADVANCED</li>
+                        <li><span>Französisch</span><br>ADVANCED</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Studium Projects</span><br>Habe  einige projects gemacht wie Damespiel</li>
+                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br>GCE ORDINARY LEVEL ZERTIFIKAT</li>
+                        <li><span>2019</span><br>GCE ADVANCED LEVEL ZERTIFIKAT</li>
+                        <li><span>JETZT</span><br>Informatikstudentin 3.Semester</li>
+                       
+                    </ul>
+                </div>
+
+        </div>
+    </div>
+  </div>
+    <!--------------------------portfolio    -------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="images/imageb.jpg">
+                </div>
+                <div class="work">
+                    <img src="images/imageb.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/imageb.jpg">
+                        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
