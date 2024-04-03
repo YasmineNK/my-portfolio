@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguedong kuidja Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +12,14 @@
     <div class="container">
         <nav>
             <img src="images/logoo-removebg-preview.png"class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>               
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>               
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Informatik Studentin</p>
@@ -49,7 +52,7 @@
                         <li><span>java</span><br>MIDDLE</li>
                         <li><span>JavaScript</span><br>MIDDLE</li>
                         <li><span>canva</span><br>BEGINNER</li>
-                        <li><span>Deutsch</span><br>MIDDLE</li>
+                        <li><span>Deutsch</span><br>C1 Niveau</li>
                         <li><span>English</span><br>ADVANCED</li>
                         <li><span>Französisch</span><br>ADVANCED</li>
 
@@ -79,21 +82,79 @@
             <h1 class="sub-title"> My Work </h1>
             <div class="work-list">
                 <div class="work">
-                <img src="images/imageb.jpg">
+                <img src="images/startscreen.png">
+                <div class="layer">
+                   <h3>Damespiel</h3> 
+                   <p>Ein Damespiel mit Java(MVC-MODEL)</p>
+                   <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              
+                </div>
                 </div>
                 <div class="work">
-                    <img src="images/imageb.jpg">
+                    <img src="images/startscreen.png">
+                    <div class="layer">
+                    
+                        <h3>Damespiel</h3> 
+                        <p>Ein Damespiel mit Java(MVC-MODEL)</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                     
+                        
+                     </div>
                     </div>
                     <div class="work">
-                        <img src="images/imageb.jpg">
+                        <img src="images/startscreen.png">
+                        <div class="layer">
+                            <h3>Damespiel</h3> 
+                            <p>Ein Damespiel mit Java(MVC-MODEL)</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                         
+                            
+                         </div>
                         </div>
 
             </div>
+            <a href="#" class="btn">see more</a>
 
         </div>
 
     </div>
- 
+ <!-----------contact----------------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>nguedongkuidja@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>01636808155</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/work cv.pdf" download class="btn btn2">Lebenslauf</a>
+                <a href="images/work cv.pdf" download class="btn btn2">Motivation brief</a>
+
+            </div>
+           
+            
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright Nguedong.Made with <i class="fas fa-heart"></i> by nguedong kuidja</p>
+  </div>
+  </div>
     <script src="script.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+
+
 </body>
 </html>
